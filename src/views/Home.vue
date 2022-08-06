@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <p>dvfdfsvc</p>
+  <div id="background">
+    
+    
   </div>
 </template>
 
@@ -11,5 +12,13 @@ export default {
 </script>
 
 <style>
-
+  #background{
+    background: url('../assets/giphy.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+    
+  }
+  
 </style>
