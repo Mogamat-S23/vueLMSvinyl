@@ -1,59 +1,46 @@
 <template>
   <div id="background">
     <div class="container">
-    
-        <h2>
+    <div id="heading">
+      <h2>
           Contact Us
         </h2>
+    </div>
         
-        <div class="row">
-          <div class="col-md-6">
-          <form class=" w-75 form-wrapper" action="https://formspree.io/f/xknykjpb" method="post" target="_blank"> 
-        <div class="row  pb-5">
-          <div class="col-md-6">
-            <input type="text" class="form-control" name="name" placeholder="First name" aria-label="First name">
-          </div>
-          <div class="col-md-6">
-            <input type="text" class="form-control" name="surname" placeholder="Last name" aria-label="Last name">
-          </div>
-        </div>
-        <div class="row  pb-5">
-          <div class="col-md-6 w-100">
-            <input type="text" class="form-control" name="email" placeholder="Email" aria-label="Email">
-          </div>
+        
+          <div class="row d-flex flex-row justify-content-center">
+          <div class="col-md-6 col-xl-6 col-sm-12 col-xm-12">
+          <form class="w-75-xl w-100-md   form-wrapper" action="https://formspree.io/f/xknykjpb" method="post" target="_blank"> 
+            <input type="text" class="form-control my-2" name="name" placeholder="First name" aria-label="First name">
+            <input type="text" class="form-control my-2" name="surname" placeholder="Last name" aria-label="Last name">
+            <input type="text" class="form-control my-2" name="email" placeholder="Email" aria-label="Email">
           
-        </div>
-        <div class="row  pb-5">
-          <div class="col">
             <div class="form-floating ">
               <textarea class="form-control"  name="message" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-              <label class="text-dark" for="floatingTextarea2">Comments</label>
+              <label class="text-dark" for="floatingTextarea2">Your message</label>
             </div>
-          </div>
-        </div>
-        <!-- submit button -->
-        <!-- i am changing -->
-        <div class="row my-2">
-            <label class="col-md-6 sm-col-12 col-form-label-lg label-to-right"></label>
-            <div class="col-8">
+      </form>
+            <div class="mt-5 submitbtn">
+            <label class="label-to-right"></label>
                 <input type="submit" value="Submit"
                 class="btn btn-outline-dark w-50" >
+
             </div>
-           </div>
+          </div>
+        <!-- submit button -->
+        <!-- i am changing -->
         
-      </form>
-      </div>
-      <div id="info" class="col-md-6">
-        
+
+      <div id="info" class="col-md-6 col-xl-6 col-sm-12 col-xm-12">
                 <ul>
                     <li>
-                        Call: +27(0)83 765 0954
+                       <span>Call:</span>  +27(0)83 765 0954
                     </li>
                     <li>
-                        Email: LMSvinyles@gmail.com
+                      <span>Email:</span>   LMSvinyles@gmail.com
                     </li>
                     <li>
-                        Address:
+                       <span> Address:</span> 
                     </li>
                     <li>
                         shop76, Somwhere place
@@ -65,12 +52,11 @@
                 </ul>
       </div>
         </div>
-      
-      
-      
-      </div>
-
+    </div>
   </div>
+      
+      
+      
     
     
  
@@ -79,42 +65,59 @@
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style scoped>
- 
- ul li {
+#heading {
+  padding-top: 5%;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+ul li {
   list-style: none;
- }
+}
 
- form{
+form {
   text-align: center;
   align-content: center;
   margin-top: 20%;
- }
+}
 
- 
- input[type="submit"]{
+input[type="submit"] {
   margin-top: -15%;
   background-color: #f4c273;
- }
+  margin-right: 50%;
+}
 
- #background{
+#background {
   background-color: black;
   color: white;
-  height: 100vh;
- }
+  height: 150vh;
+}
 
- h2{
+h2 {
   background-color: #f4c273;
   height: 60px;
   padding: 1%;
- }
+}
 
- #info{
+#info {
   margin-top: 10%;
- }
+}
+
+span {
+  font-weight: bolder;
+  font-size: 20px;
+}
+.submitbtn{
+  margin-top: 4rem !important;
+}
 </style>

@@ -7,7 +7,7 @@
          <h3 id="heading">
         Explore our wide range of vinyls
       </h3 >
-      <h3>With Just a click of a button</h3>
+      <h3>with just a click of a button</h3>
       </div>
       
      
@@ -23,26 +23,26 @@
      <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h3 id="heading">
-          Welcome to LMS vinyls
-        </h3>
+          <h2 id="heading1">
+         <strong>  Welcome to LMS vinyls</strong>
+        </h2>
         </div>
         
 
       </div>
       <div class="row">
         
-          <p>We buy and sell records and 7 inch singles. </p>
+          <p>We sell good qaulity records at affordable prices </p>
 
 <p>
-  Our shop in Linden carries a wide range of genres and our online store caters to all music lovers. As a buyer you will have loads of super cool pre owned and new records to choose from and as a seller we offer competitive prices for all types of music.
+  Our shop in Nowhere avenue has a wide range of genres and our online store caters to all music lovers. As a buyer you will have loads of super cool new records to choose from and as a seller we offer competitive prices for all types of music.
   </p> 
 
 <p> We also import new records and will do our best to source something for you if we don’t have it in stock.</p>
 
-<p>Hope you enjoy your time in our virtual shop and feel free to drop in at our store in Linden for a genuine record store experience. </p>
+<p>Hope you enjoy your time in our virtual shop and feel free to drop in at our store in Nowhere avenue for a genuine record store experience. </p>
 
-<p> Selling your records or buying lps for your collection. Record Mad is here for you.Tell all your friends!</p>
+<p>  LMS is here for you. Tell all your friends!</p>
 
 <p> </p>
         
@@ -62,7 +62,7 @@ export default {
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
 
   #background{
-    background: url('https://i.postimg.cc/hjxrS3Gd/splatter-vinyl.gif');
+    background: url('https://i.postimg.cc/kXXFsGw6/ae372456f0c98abe31aa8e55372995b9.gif');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -100,11 +100,30 @@ export default {
   font-weight:bolder;
   color: white;
 }
+
+h2{
+  margin-bottom: 4%;
+  margin-top: 15%;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-size: 2rem;
+  font-weight: bolder;
+   color: #f4c273
+
+}
+
+p{
+   font-family: 'Montserrat', sans-serif;
+   color: white;
+   font-family: bolder;
+   font-size: 17px;
+}
 h3{
   color: white;
   font-weight: bolder;
   font-family: 'Montserrat', sans-serif;  
 }
+
+
 
 .button:hover{
   background-color: black;
