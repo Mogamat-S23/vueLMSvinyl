@@ -1,62 +1,62 @@
 <template>
-   <!-- <nav>
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/allproducts">Vinyles</router-link> |
     <router-link to="/about">About</router-link> |
     <router-link to="/contact">Contact Us</router-link> |
     <router-link to="/register">Register</router-link>  |
     <router-link to="/login">Login</router-link>
-    
-
-
-    
   </nav> -->
-<div class="container">
-  
-</div>
+  <div class="container"></div>
   <header class="header top-0">
-    <input class="menu-btn" type="checkbox" id="menu-btn" >
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"
       ><span class="navicon"></span
     ></label>
     <ul class="menu">
-
       <li>
-        <img id="logo" src="https://i.postimg.cc/7L5yddPz/logo4.png" alt="logo" style="width:100px; height:50x;">
+        <img
+          id="logo"
+          src="https://i.postimg.cc/7L5yddPz/logo4.png"
+          alt="logo"
+          style="width: 100px; height: 50x"
+        />
       </li>
       <li class="nav-item">
-        <router-link to="/"><i class="bi bi-house-door-fill"></i> HOME</router-link>
+        <router-link to="/"
+          ><i class="bi bi-house-door-fill"></i> HOME</router-link
+        >
       </li>
       <li class="nav-item">
-        <router-link to="/allproducts"><i class="bi bi-vinyl-fill"></i> VINYLS</router-link>
+        <router-link to="/allproducts"
+          ><i class="bi bi-vinyl-fill"></i> VINYLS</router-link
+        >
       </li>
 
       <li class="nav-item">
-        <router-link to="/about"><i class="bi bi-file-earmark-richtext-fill"></i> ABOUT</router-link>
+        <router-link to="/about"
+          ><i class="bi bi-file-earmark-richtext-fill"></i> ABOUT</router-link
+        >
       </li>
       <li class="nav-item">
-        <router-link to="/contact"><i class="bi bi-telephone-forward-fill"></i> CONTACT</router-link>
+        <router-link to="/contact"
+          ><i class="bi bi-telephone-forward-fill"></i> CONTACT</router-link
+        >
       </li>
-    
-  </ul>
+    </ul>
   </header>
 </template>
 
-
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>
-
-#logo{
+#logo {
   margin-right: 735px;
- 
 }
 
-  a {
+a {
   color: white;
 }
 /* header */
@@ -155,17 +155,23 @@ export default {
 @media (min-width: 48em) {
   .header li {
     float: left;
+    margin: 0 0 0 0;
   }
   .header li a {
     padding: 20px 30px;
   }
   .header .menu {
     clear: none;
-    float: right;
+    /* float: right; */
     max-height: none;
   }
   .header .menu-icon {
     display: none;
   }
+}
+@media screen and (min-width: 1000px) and (max-width: 1027px) {
+ #logo{
+  margin: 0 810px 0 5px;
+ }
 }
 </style>
