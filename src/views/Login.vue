@@ -52,7 +52,7 @@ export default {
 #background {
   background-color: black;
   color: white;
-  height: 90vh;
+  height: 100vh;
   
 }
 

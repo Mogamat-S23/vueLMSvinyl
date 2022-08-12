@@ -107,6 +107,7 @@ h2 {
   background-color: #f4c273;
   height: 60px;
   padding: 1%;
+  margin-top: 70px;
 }
 
 #info {

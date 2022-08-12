@@ -1,6 +1,10 @@
 <template>
- <Nav/>
-  <router-view/>
+ <header>
+  <Nav/>
+  <div class="min-vh-100">
+    <router-view/>
+  </div>
+ </header>
   <Footer/>
 </template>
 
@@ -12,6 +16,9 @@ export default{
 };
 </script>
 <style>
+body{
+  overflow-x: hidden;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

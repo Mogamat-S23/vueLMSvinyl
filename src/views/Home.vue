@@ -95,10 +95,11 @@ export default {
   /* margin-top: 20%; */
 }
 #heading{
-  margin-top: 20%;
+  /* margin-top: 20%; */
   font-family: 'Montserrat', sans-serif;
   font-weight:bolder;
   color: white;
+  padding-top: 200px;
 }
 
 h2{
