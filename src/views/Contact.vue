@@ -49,8 +49,12 @@
                         98 Nowhere Avenue,
                     </li>
                     <li>Cape Town</li>
+                    <div class="vinyl">
+                  <img  src="https://i.postimg.cc/59r1YJcL/1logo.png" alt="logo" style="width:200px;">
+                </div>
                 </ul>
-                <img src="https://i.postimg.cc/7L5yddPz/logo4.png" alt="logo" style="width:200px;">
+                
+                
       </div>
       
         </div>
@@ -102,7 +106,7 @@ input[type="submit"] {
 #background {
   background-color: black;
   color: white;
-  height: 150vh;
+  height: 190vh;
 }
 
 h2 {
@@ -122,5 +126,34 @@ span {
 }
 .submitbtn{
   margin-top: 4rem !important;
+}
+
+.vinyl{  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  margin-top: 20%;
+}
+.vinyl img{
+  /**Size**/
+  width: 200px;
+  height: 200px;
+  /**Animation**/
+  animation: play 10s 0s infinite;
+  transform: rotate(0deg);
+  animation-timing-function: linear;
+  /**Vinyl**/
+  box-shadow: 0 0 0 5px #333, 0 0 0 6px #1a1a1a, 0 0 0 7px #333, 0 0 0 8px #1a1a1a, 0 0 0 9px #333, 0 0 0 10px #1a1a1a, 0 0 0 11px #333, 0 0 0 12px #1a1a1a, 0 0 0 13px #333, 0 0 0 14px #1a1a1a, 0 0 0 15px #333, 0 0 0 16px #1a1a1a, 0 0 0 17px #333, 0 0 0 18px #1a1a1a, 0 0 0 19px #333, 0 0 0 20px #1a1a1a, 0 0 0 21px #333, 0 0 0 22px #1a1a1a, 0 0 0 23px #333, 0 0 0 24px #262626, 0 0 0 25px #333, 0 0 0 26px #1a1a1a, 0 0 0 27px #333, 0 0 0 28px #1a1a1a, 0 0 0 45px #333, 0 0 0 50px #1a1a1a;
+  border-radius: 50%;
+}
+
+@keyframes play {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 </style>

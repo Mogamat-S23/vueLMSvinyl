@@ -6,7 +6,7 @@
         <div class="row" >
           <div class="col-md-6 col-12">
               <img :src="vinyl[0].img2" alt="" class="img-fluid" id="img"/>
-               <img :src="vinyl[0].img2" alt="" class="img-fluid" id="img"/>
+               <img :src="vinyl[0].img3" alt="" class="img-fluid" id="img"/>
 
           </div>
 
@@ -71,12 +71,16 @@ export default {
     color: white;
     height: 450px;
     border: 3px solid black;
+   
     /* margin-top: 50%; */
 }
 
 .card{
-    background-color: black;
+
+background-color: black;
+
 }
+
 
 .button {
   border-radius: 4px;

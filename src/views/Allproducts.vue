@@ -12,7 +12,10 @@
           :key="vinly.product_id"
         >
           <div class="card" style="width: 15rem">
-            <img :src="vinly.img" class="card-img-top img-fluid" alt="..." />
+          <div class="block">
+                        <img :src="vinly.img" class="card-img-top img-fluid" alt="..." />
+          </div>
+
             <div class="card-body">
               <h5 class="card-title">{{ vinly.title }}</h5>
               <p class="card-text">R {{ vinly.price }}</p>
@@ -60,10 +63,11 @@ export default {
 
 #background {
   /* background: url('https://i.postimg.cc/TY36Fqrr/vinyl-101784-960-720.jpg'); */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   background-color: black;
+  /* height: 255vh; */
 
   
 }
@@ -85,9 +89,12 @@ export default {
   /* padding: 20px; */
   box-sizing: border-box;
   text-align: center;
-  box-shadow: 0 10px 20px rgba(244, 194, 115, 0.9);
+  box-shadow: 0 1px 10px rgba(244, 194, 115, 0.9);
   overflow: hidden;
   border-radius:10px ;
+  
+
+ 
   
   
 }
@@ -166,5 +173,22 @@ export default {
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+.block {
+  border-radius: 50%;
+  
+}
+
+.block:hover {
+  animation-name: spin-the-vinyl;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin-the-vinyl {
+  0%   { transform:rotate(0deg); }
+  100% { transform:rotate(360deg); }
 }
 </style>
