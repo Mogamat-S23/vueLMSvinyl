@@ -50,7 +50,9 @@
                     </li>
                     <li>Cape Town</li>
                 </ul>
+                <img src="https://i.postimg.cc/7L5yddPz/logo4.png" alt="logo" style="width:200px;">
       </div>
+      
         </div>
     </div>
   </div>

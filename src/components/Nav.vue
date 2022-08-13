@@ -43,6 +43,16 @@
           ><i class="bi bi-telephone-forward-fill"></i> CONTACT</router-link
         >
       </li>
+      <li class="nav-item">
+        <router-link to="/register"
+          ><i class="bi bi-file-text-fill"></i>REGISTER</router-link
+        >
+      </li>
+      <li class="nav-item">
+        <router-link to="/login"
+          ><i class="bi bi-door-open-fill"></i> LOGIN</router-link
+        >
+      </li> 
     </ul>
   </header>
 </template>
@@ -53,7 +63,9 @@ export default {};
 
 <style>
 #logo {
-  margin-right: 735px;
+  margin-right: 35px;
+  width: 25px;
+  height: 50px;
 }
 
 a {

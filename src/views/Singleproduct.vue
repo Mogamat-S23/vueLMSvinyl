@@ -6,7 +6,10 @@
         <div class="row" >
           <div class="col-md-6 col-12">
               <img :src="vinyl[0].img2" alt="" class="img-fluid" id="img"/>
+               <img :src="vinyl[0].img2" alt="" class="img-fluid" id="img"/>
+
           </div>
+
           <div class="col-md-6 col-12">
             <div class="card-body">
               <h1>{{ vinyl[0].title }}</h1>
@@ -17,10 +20,10 @@
                 longer.
               </p>
               <h2>R{{ vinyl[0].price }}</h2>
-            </div>
             <p class="card-text">
-              <button type="submit">Add to Cart</button>
+              <button class="button" type="submit"><span>Add to cart</span></button>
             </p>
+            </div>
           </div>
         </div>
       </div>
@@ -53,6 +56,8 @@ export default {
     padding: 10px;
     object-fit: cover;
     border-radius: 30px;
+    height: 300px;
+    width: 450px;
 }
 #rowidg{
     margin: 9rem 0 0 0;
@@ -60,4 +65,69 @@ export default {
 .card-text{
   font-size: 20px;
 }
+
+.card-body{
+    background-color: #f4c273;
+    color: white;
+    height: 450px;
+    border: 3px solid black;
+    /* margin-top: 50%; */
+}
+
+.card{
+    background-color: black;
+}
+
+.button {
+  border-radius: 4px;
+  background-color:  white;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 13px;
+  padding: 10px;
+  width: 120px;
+  transition: all 0.1s;
+  cursor: pointer;
+  /* margin: 5px; */
+  height: 50px;
+  /* margin-top: 20%; */
+  margin: 2%;
+  
+}
+
+.button:hover{
+  background-color: black;
+  color: white;
+   transition: 0.2s;
+   
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.1s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
 </style>

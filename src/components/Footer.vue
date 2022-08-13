@@ -15,25 +15,22 @@
                     <h2>Pages</h2>
                 <ul id="contact">
                     <li>
-                        <a href="">Home</a>
+                        <a href="/">Home</a>
                         
                     </li>
                     <li>
-                        <a href="">Vinyls</a>
+                        <a href="/allproducts">Vinyls</a>
 
                     </li>
                     <li>
-                        <a href="">About</a>
+                        <a href="/about">About</a>
 
                     </li>
                     <li>
-                        <a href="">Contatc</a>
+                        <a href="/contact">Contact</a>
 
                     </li>
-                    <li>
-                        <a href="">About</a>
-
-                    </li>
+                    
                 </ul>
             </div>
 

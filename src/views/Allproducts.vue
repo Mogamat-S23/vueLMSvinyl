@@ -2,7 +2,8 @@
   <!-- <div id="allproducts">
     <p>fdsd</p>
   </div> -->
-  <div v-if="vinlys">
+  <section id="background">
+     <div v-if="vinlys">
     <div class="container">
       <div class="row">
         <div
@@ -18,7 +19,8 @@
               <router-link
                 :to="{ name: 'single', params: { id: vinly.product_id } }"
               >
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <button class="button"><span>View</span></button>
+                
               </router-link>
             </div>
           </div>
@@ -26,8 +28,15 @@
       </div>
     </div>
   </div>
-  <div v-else>No vinlys to display</div>
+   <div v-else>No vinlys to display</div>
+  </section>
+  
+   
+ 
+  
 </template>
+  
+  
 
 <script>
 import Productscard from "../components/Productscard.vue";
@@ -48,8 +57,39 @@ export default {
 </script>
 
 <style scoped>
+
+#background {
+  /* background: url('https://i.postimg.cc/TY36Fqrr/vinyl-101784-960-720.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+
+  
+}
+
+.card{
+  border: #f4c273;
+
+  
+}
+
 .container {
   padding: 60px 0 0 0;
+    position: relative;
+  /* margin: 0 auto; */
+  /* width: 225px !important; */
+  width: fit-content;
+  background: transparent;
+  color: white;
+  /* padding: 20px; */
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(244, 194, 115, 0.9);
+  overflow: hidden;
+  border-radius:10px ;
+  
+  
 }
 .container .row .center {
   display: flex;
@@ -65,5 +105,66 @@ export default {
   .container {
     padding: 170px 0 0 0px;
   }
+}
+
+
+
+.card-body{
+  background-color: #f4c273;
+  color: white;
+  width: 240px;
+  margin-left: -0.2%;
+  border-radius: 3%;
+  
+}
+
+
+.button {
+  border-radius: 4px;
+  background-color:  white;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 13px;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.1s;
+  cursor: pointer;
+  /* margin: 5px; */
+  height: 50px;
+  /* margin-top: 20%; */
+}
+
+.button:hover{
+  background-color: black;
+  color: white;
+   transition: 0.2s;
+   
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.1s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 </style>

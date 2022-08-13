@@ -79,11 +79,12 @@ export default {
 
 .container{
     padding: 20px;
+	padding-top: 150px;
 }
 #background {
   background-color: black;
   color: white;
-  height: 120vh;
+  height: 150vh;
   
 }
 
