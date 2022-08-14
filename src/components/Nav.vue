@@ -50,7 +50,17 @@
       </li>
       <li class="nav-item">
         <router-link to="/login"
-          ><i class="bi bi-door-open-fill"></i> LOGIN</router-link
+          ><i class="bi bi-person-badge-fill"></i>LOGIN</router-link
+        >
+      </li> 
+      <li class="nav-item">
+        <router-link to="/admin"
+          ><i class="bi bi-door-open-fill"></i> Admin</router-link
+        >
+      </li> 
+      <li class="nav-item">
+        <router-link to="/cart"
+          ><i class="bi bi-cart-fill"></i></router-link
         >
       </li> 
     </ul>

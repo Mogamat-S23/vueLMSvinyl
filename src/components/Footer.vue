@@ -64,7 +64,7 @@
             <div id="hr" class="row">
                 <div class="col-12">
                     <hr>
-                    <strong>&copy;2022 LMS. All Right Reserved |</strong> Designed by <span id="name"> Liam Engel </span> & <span id="name"> Mogamat Saleem Ariefdien</span>
+                    <strong>&copy;2022 LMS. All Rights Reserved |</strong> Designed by <span id="name"> Liam Engel </span> & <span id="name"> Mogamat Saleem Ariefdien</span>
                 </div>
                  
             </div>

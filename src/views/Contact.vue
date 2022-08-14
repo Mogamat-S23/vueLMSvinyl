@@ -50,7 +50,7 @@
                     </li>
                     <li>Cape Town</li>
                     <div class="vinyl">
-                  <img  src="https://i.postimg.cc/59r1YJcL/1logo.png" alt="logo" style="width:200px;">
+                  <img id="vimg"  src="https://i.postimg.cc/59r1YJcL/1logo.png" alt="logo" >
                 </div>
                 </ul>
                 
@@ -155,5 +155,9 @@ span {
   100% {
     transform: rotate(360deg);
   }
+}
+
+#vimg{
+  border-radius: 50%;
 }
 </style>

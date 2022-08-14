@@ -1,6 +1,11 @@
 <template>
 <div id="background">
  <div class="container">
+	<div id="heading">
+      <h2>
+          Register
+        </h2>
+    </div>
 			<div class="row main">
 				<div class="main-login main-center">
 					<form class="form" method="post" action="#">
@@ -56,7 +61,7 @@
 						</div>
 
 						<div class="form-group ">
-							<a href="" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Register</a>
+							<button class="button"><span>Register</span></button>
 						</div>
 						
 					</form>
@@ -86,6 +91,15 @@ export default {
   color: white;
   height: 150vh;
   
+}
+#heading {
+  padding-top: 1%;
+}
+h2 {
+  background-color: #f4c273;
+  height: 60px;
+  padding: 1%;
+ 
 }
 
 #playground-container {
@@ -202,6 +216,56 @@ span.input-group-addon  {
 .login-register{
 	font-size: 11px;
 	text-align: center;
+}
+
+
+.button {
+  border-radius: 4px;
+  background-color:  white;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 13px;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.1s;
+  cursor: pointer;
+  /* margin: 5px; */
+  height: 50px;
+  /* margin-top: 20%; */
+}
+
+.button:hover{
+  background-color: black;
+  color: white;
+   transition: 0.2s;
+   
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 </style>
