@@ -21,11 +21,11 @@
 	                                <td>
 	                                	<div class=" align-center">
 		                                    <div class="img-product">
-		                                        <img src="https://www.91-img.com/pictures/laptops/asus/asus-x552cl-sx019d-core-i3-3rd-gen-4-gb-500-gb-dos-1-gb-61721-large-1.jpg" alt="" class="mCS_img_loaded">
+		                                        <img src="https://i.postimg.cc/1zG44Qws/76982-medium.jpg" alt="" class="mCS_img_loaded">
 		                                    </div>
 		                                    <div class="name-product">
-		                                        Apple iPad Mini
-		                                        <br>G2356
+		                                        Revenge
+		                                        <br> Kiss
 		                                    </div>
 		                                    <div class="price">
 		                                        $1,250.00
@@ -54,11 +54,11 @@
 	                                <td>
 	                                	<div class=" align-center">
 		                                    <div class="img-product">
-		                                        <img src="https://www.91-img.com/pictures/laptops/asus/asus-x552cl-sx019d-core-i3-3rd-gen-4-gb-500-gb-dos-1-gb-61721-large-1.jpg" alt="" class="mCS_img_loaded">
+		                                        <img src="https://i.postimg.cc/m2ztHqHz/95735-medium.jpg" alt="" class="mCS_img_loaded">
 		                                    </div>
 		                                    <div class="name-product">
-		                                        Apple iPad Mini
-		                                        <br>G2356
+		                                      michael jackson
+		                                        <br>Thriller
 		                                    </div>
 		                                    <div class="price">
 		                                        $1,250.00

@@ -7,14 +7,14 @@
          <h3 id="heading">
         Explore our wide range of vinyls
       </h3 >
-      <h3>with just a click of a button</h3>
+      <h3></h3>
       </div>
       
      
     </div>
     <div class="row">
       <div class="col-md-12">
-        <button class="button"><span>Shop</span></button>
+        <button class="button"><span>About</span></button>
       </div>
     </div>
    </div>
@@ -99,7 +99,7 @@ export default {
   font-family: 'Montserrat', sans-serif;
   font-weight:bolder;
   color: white;
-  padding-top: 200px;
+  padding-top: 275px;
 }
 
 h2{
@@ -122,6 +122,7 @@ h3{
   color: white;
   font-weight: bolder;
   font-family: 'Montserrat', sans-serif;  
+
 }
 
 
