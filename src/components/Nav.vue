@@ -164,13 +164,13 @@ a {
   top: 0;
 }
 /* 48em = 768px */
-@media (min-width: 48em) {
+@media (min-width: 48em) and (max-width: 49em){
   .header li {
     float: left;
     margin: 0 0 0 0;
   }
   .header li a {
-    padding: 20px 30px;
+    padding: 20px 18px;
   }
   .header .menu {
     clear: none;
@@ -180,6 +180,9 @@ a {
   .header .menu-icon {
     display: none;
   }
+  #logo{
+  margin: 0 570px 0 5px;
+ }
 }
 @media screen and (min-width: 1000px) and (max-width: 1027px) {
  #logo{
