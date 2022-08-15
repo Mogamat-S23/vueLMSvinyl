@@ -10,22 +10,24 @@
         
           <div class="row d-flex flex-row justify-content-center">
           <div class="col-md-6 col-xl-6 col-sm-12 col-xm-12">
-          <form class="w-75-xl w-100-md   form-wrapper" action="https://formspree.io/f/xknykjpb" method="post" target="_blank"> 
-            <input type="text" class="form-control my-2" name="name" placeholder="First name" aria-label="First name">
-            <input type="text" class="form-control my-2" name="surname" placeholder="Last name" aria-label="Last name">
-            <input type="text" class="form-control my-2" name="email" placeholder="Email" aria-label="Email">
+           <form class="w-75-xl w-100-md   form-wrapper" action="https://formspree.io/f/xknykjpb" method="post" target="_blank"> 
+            <input type="text" class="form-control my-2" name="name" placeholder="First name" aria-label="First name" required>
+            <input type="text" class="form-control my-2" name="surname" placeholder="Last name" aria-label="Last name" required>
+            <input type="text" class="form-control my-2" name="email" placeholder="Email" aria-label="Email" required>
           
             <div class="form-floating ">
               <textarea class="form-control"  name="message" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
               <label class="text-dark" for="floatingTextarea2">Your message</label>
             </div>
-      </form>
             <div class="mt-5 submitbtn">
-            <label class="label-to-right"></label>
-                <input type="submit" value="Submit"
+              <label class="label-to-right"></label>
+                <input  type="submit" value="Submit"
                 class="btn btn-outline-dark w-50" >
 
-            </div>
+            </div> 
+              </form> 
+
+            
           </div>
         <!-- submit button -->
         <!-- i am changing -->

@@ -12,7 +12,7 @@
                 <p>It started out as a small business selling records back in 2020 from home and slowly begin to grow. We then realized
                     that there is a real market for vinyls and that we could make bank with it.
                      We then invested all our money to open up a vinyl store where customers from every walks of life could
-                    come and enjoy as well share this experience and love for vinyls like we do.
+                    come and enjoy as well as share this experience and love for vinyls like we do.
                 </p>
                 <p>
                     With the help of our loyal customers we have grown to become a very popular sore.
@@ -26,7 +26,7 @@
               
 
             </div>
-                  <div class="row">
+                  <!-- <div class="row">
                         <div class="col-md-6">
                             <div class="case">
                                 <div class="overlay"></div>
@@ -51,7 +51,7 @@
                         </div>
                 </div>
                 
-            </div>
+            </div> -->
             </div>
 
             
@@ -77,13 +77,13 @@ export default {};
 
  #aboutback{
     background-color: black;
-       height: 200vh !important;
+       height: 145vh !important;
    
  }
 
 #aboutheading{
     color: #f4c273;
-    padding-top: 65px;
+    padding-top: 90px;
  
   
 }

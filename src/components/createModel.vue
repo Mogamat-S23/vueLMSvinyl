@@ -121,7 +121,7 @@ export default {
   data() {
     return {
      
-      prodimg: "https://i.postimg.cc/sx3W1SbS/logo2.png",
+      prodimg: "https://i.postimg.cc/cJrnTLRQ/logo.png",
       quantity: 1,
       price: "",
       title: "",

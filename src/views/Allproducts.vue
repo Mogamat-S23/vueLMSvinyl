@@ -5,6 +5,19 @@
   <section id="background">
      <div v-if="vinlys">
     <div class="container">
+      <div class="row height d-flex justify-content-center align-items-center">
+
+              <div class="col-md-6">
+
+                <div class="form">
+                  <i class="fa fa-search"></i>
+                  <input type="text" class="form-control form-input" placeholder="Search genre...">
+                 
+                </div>
+                
+              </div>
+              
+            </div>
       <div class="row">
         <div
           class="col-12 col-md-6 col-lg-4 pt-5 center"
@@ -60,6 +73,57 @@ export default {
 </script>
 
 <style scoped>
+body{
+
+    background: #d1d5db;
+}
+
+.form{
+
+    position: relative;
+    margin-top: 20px;
+}
+
+.form .fa-search{
+
+    position: absolute;
+    top:20px;
+    left: 20px;
+    color: #9ca3af;
+
+}
+
+.form span{
+
+        position: absolute;
+    right: 17px;
+    top: 13px;
+    padding: 2px;
+    border-left: 1px solid #d1d5db;
+
+}
+
+.left-pan{
+    padding-left: 7px;
+}
+
+.left-pan i{
+   
+   padding-left: 10px;
+}
+
+.form-input{
+
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 10px;
+}
+
+.form-input:focus{
+
+    box-shadow: none;
+    border:none;
+}
 
 #background {
   /* background: url('https://i.postimg.cc/TY36Fqrr/vinyl-101784-960-720.jpg'); */
@@ -120,8 +184,8 @@ export default {
   background-color: #f4c273;
   color: white;
   width: 240px;
-  margin-left: -0.2%;
-  border-radius: 3%;
+  /* margin-left: -0.1%; */
+  border-radius: 5%;
   
 }
 

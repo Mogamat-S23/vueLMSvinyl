@@ -14,7 +14,7 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <button class="button"><span>About</span></button>
+        <button class="button"><a href="../views/About.vue"></a><span>About</span></button>
       </div>
     </div>
    </div>
@@ -97,7 +97,7 @@ export default {
 #heading{
   /* margin-top: 20%; */
   font-family: 'Montserrat', sans-serif;
-  font-weight:bolder;
+  font-weight:2000;
   color: white;
   padding-top: 275px;
 }

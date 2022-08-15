@@ -115,7 +115,9 @@ export default {
 
  } 
     
-
+i:hover{
+    color:#f4c273;
+}
     
      ul li a:hover{
         color: white;

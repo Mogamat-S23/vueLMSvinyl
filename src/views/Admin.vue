@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid"></div>
+  <div class="container"></div>
   <div id="back1">
     <nav>
       <div>
@@ -12,7 +12,9 @@
   </div>
 
   <div class="container">
+    <h2 style="color: black;">Products Table</h2>
     <table class="table">
+      
       <thead>
         <tr>
           <th>ID</th>
@@ -97,11 +99,9 @@ export default {
 }
 </script>
     
-<style>
-*{
-  margin: 0;
-  padding: 0;
-  /* overflow-y: hidden; */
+<style scoped>
+.container{
+  margin-right: 150px;
 }
 
 /* body{
@@ -114,10 +114,15 @@ td {
   border: 1px solid black;
   text-align: center;
   
+  
 }
+
+
 table {
   text-align: center;
   margin-top: 2%;
+ /* margin-right: 30px; */
+
 }
 
 #btnSubmit1 {

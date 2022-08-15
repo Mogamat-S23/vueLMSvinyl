@@ -15,8 +15,15 @@
               <h1>{{ vinyl[0].title }}</h1>
               <!-- <h5 class="card-title">Card title</h5> -->
               <p class="card-text">
-                
+                {{vinyl[0].product_description}}
+              
               </p>
+              <h5>
+                 Genre:{{vinyl[0].genre}}
+              </h5>
+              <h5>
+                Quantity: {{vinyl[0].quantity}}
+              </h5>
               <h2>R{{ vinyl[0].price }}</h2>
             <p class="card-text">
               <button class="button" type="submit"><span>Add to cart</span></button>
