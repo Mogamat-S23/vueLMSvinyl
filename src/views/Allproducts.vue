@@ -18,7 +18,7 @@
 
             <div class="card-body">
               <h5 class="card-title">{{ vinly.title }}</h5>
-              <p class="card-text">R {{ vinly.price }}</p>
+              <p class="card-text">R{{ vinly.price }}.00</p>
               <router-link
                 :to="{ name: 'single', params: { id: vinly.product_id } }"
               >
