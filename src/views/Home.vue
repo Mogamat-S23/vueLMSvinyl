@@ -7,16 +7,16 @@
          <h3 id="heading">
         Explore our wide range of vinyls
       </h3 >
-      <h3></h3>
+      <h3>Enjoy the music experience.</h3>
       </div>
       
      
     </div>
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-md-12">
         <button class="button"><a href="../views/About.vue"></a><span>About</span></button>
       </div>
-    </div>
+    </div> -->
    </div>
   </div>
   <div id="back">
@@ -98,7 +98,7 @@ export default {
   /* margin-top: 20%; */
   font-family: 'Montserrat', sans-serif;
   font-weight:2000;
-  color: white;
+  color: black;
   padding-top: 275px;
 }
 
@@ -119,7 +119,7 @@ p{
    font-size: 17px;
 }
 h3{
-  color: white;
+  color: black;
   font-weight: bolder;
   font-family: 'Montserrat', sans-serif;  
 
