@@ -15,19 +15,27 @@
                     <h2>Pages</h2>
                 <ul id="contact">
                     <li>
-                        <a href="/">Home</a>
+                        <router-link to="/"
+          > HOME</router-link
+        >
                         
                     </li>
                     <li>
-                        <a href="/allproducts">Vinyls</a>
+                        <router-link to="/allproducts"
+          > VINYLS</router-link
+        >
 
                     </li>
                     <li>
-                        <a href="/about">About</a>
+                        <router-link to="/about"
+          > ABOUT</router-link
+        >
 
                     </li>
                     <li>
-                        <a href="/contact">Contact</a>
+                      <router-link to="/contact"
+          > CONTACT</router-link
+        >
 
                     </li>
                     
