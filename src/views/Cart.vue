@@ -2,18 +2,18 @@
      <div id="cartbackground">
 
         <div class="cart-wrap">
-		<div class="container">
-	        <div class="row">
+		<div class="container " v-if="cart">
+	        <div class="row" v-for="item in cart" :key="item" :item="item">
 			    <div class="col">
 			        <div class="main-heading">Shopping Cart</div>
 			        <div class="table-cart">
 	                    <table>
 	                        <thead>
 	                            <tr>
-	                                <th>Product</th>
-	                                <th>Quantity</th>
-	                                <th>Total</th>
-	                                <th></th>
+	                                <th>{{ vinyl[0].title }}</th>
+	                                <th>{{vinyl[0].product_description}}</th>
+	                                <th>Genre:{{vinyl[0].genre}}</th>
+	                                <th>Quantity: {{vinyl[0].quantity}}</th>
 	                            </tr>
 	                        </thead>
 	                        <tbody>
@@ -21,15 +21,15 @@
 	                                <td>
 	                                	<div class=" align-center">
 		                                    <div class="img-product">
-		                                        <img src="https://i.postimg.cc/1zG44Qws/76982-medium.jpg" alt="" class="mCS_img_loaded">
+		                                       <img :src="vinyl[0].img2" alt="">
 		                                    </div>
 		                                    <div class="name-product">
-		                                        Revenge
-		                                        <br> Kiss
+		                                        {{ vinyl[0].title }}
 		                                    </div>
 		                                    <div class="price">
-		                                        $1,250.00
+		                                        R{{ vinyl[0].price }}
 		                                    </div>
+											<button @click="$store.dispatch('removeOne' )"></button>
 	                                    </div>
 	                                </td>
 	                                <td class="product-count">

@@ -11,13 +11,33 @@
 
                 <div class="form">
                   <i class="fa fa-search"></i>
-                  <input type="text" class="form-control form-input" placeholder="Search genre...">
+                  <input type="search" v-model="search" class="form-control form-input" placeholder="Search name...">
                  
                 </div>
                 
               </div>
               
             </div>
+            <!-- <div class="col-md-3 mx-auto">
+          <select class="form-select" v-model="category">
+           
+            <option value="All">Filter by Genre</option>
+            <option value="Rock">Rock</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Pop">Pop</option>
+            <option value="Hip Hop">Hip-Hop</option>
+           
+          </select>
+        </div> -->
+        <div class="col-md-3 pt-1 mx-auto">
+          <select class="form-select" id="price" @change="sortPrice">
+            <option value="All">Sort By Price</option>
+            <option value="asc">Lowest To Highest</option>
+            <option value="desc">Highest to Lowest</option>
+          </select>
+        </div>
+
+
       <div class="row">
         <div
           class="col-12 col-md-6 col-lg-4 pt-5 center"
@@ -61,10 +81,46 @@ export default {
   components: {
     Productscard,
   },
+
+  data() {
+    return {
+      search:"",
+      category: "All",
+      asc: true
+    };
+  },
+
+  methods: {
+    sortPrice(){
+      let up = document.getElementById("price").value
+      if(up === "asc") {
+        this.$store.state.products.sort((a, b) => {
+          return a.price - b.price;
+        });
+      }
+      else {
+        this.$$store.state.products.sort((a, b) => {
+          return b.price - a.price;
+        });
+      }
+    },
+  },
   mounted() {
     this.$store.dispatch("products");
   },
   computed: {
+    products(){
+      return this.$store.state.products?.filter((product) => {
+        let isMatch = true;
+        if(!product.name.toLowerCase().includes(this.search)){
+          isMatch = false;
+        }
+        if (this.category !== 'All' && this.category !== product.category){
+          isMatch = false;
+        }
+        return isMatch
+      })
+    },
     vinlys() {
       return this.$store.state.products;
     },

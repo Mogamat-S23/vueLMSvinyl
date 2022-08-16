@@ -1,5 +1,5 @@
 <template>
-  <div class="container"></div>
+  <div class="container">
   <div id="back1">
     <nav>
       <div>
@@ -52,21 +52,19 @@
                      data-bs-togal="modal"
                      :data-bs-target="'#update' + product.id">
                   </a>Edit</td> -->
-
+  
           <td>
             <th scoped="col"> <button id="btnSubmit1" class="btn" data-bs-toggle="modal"  :data-bs-target="'#update'+ product.product_id">
              Edit</button></th>
              </td>
          
-          <th>
+          <th >
              <td scoped='col'> 
             <button type="btn" class="btn" id="btnSubmit1"
-          @click="$store.dispatch('deleteProduct', product_id)"
+          @click="$store.dispatch('deleteProduct', product. product_id)"
                     >Delete
                   </button>
              </td>
-
-
              </th>
              
 
@@ -76,6 +74,7 @@
       </tbody>
         <div v-else>No data</div>
     </table>
+  </div>
   </div>
 
   <createModal />
@@ -203,6 +202,7 @@ a:hover {
   background-position: center;
   min-height: 30vh;
   padding-right: 3%;
+  margin-top: 20px;
 }
 
 h2 {

@@ -26,7 +26,7 @@
               </h5>
               <h2>R{{ vinyl[0].price }}</h2>
             <p class="card-text">
-              <button class="button" type="submit"><span>Add to cart</span></button>
+              <button @click="add" class="button" type="submit"><span>Add to cart</span></button>
             </p>
             </div>
           </div>
@@ -49,6 +49,18 @@ export default {
       return this.$store.state.product;
     },
   },
+
+  methods: {
+    add(){
+      this.$store.dispatch("addToCart", {
+        product_id: this.id,
+      });
+    }
+  },
+  back() {
+    this.$store.state.product = null
+  },
+  
 };
 </script>
 

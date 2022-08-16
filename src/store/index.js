@@ -92,7 +92,11 @@ export default createStore({
           },
         })
         .then((res) => res.json())
-        .then(() => context.dispatch("products"));
+        .then((data) => {
+          console.log(data)
+          context.dispatch("products")
+        });
+
     },
 
       
